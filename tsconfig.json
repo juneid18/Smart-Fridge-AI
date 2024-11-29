@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/index.jsx", "components/GetStarted.jsxted.jsxted.jsxted.jsx", "app/Screen/_layout.jsx", "components/AddItemModal.tsx", "app/_layout.jsx", "components/GetStarted.jsx", "components/Footer.jsx"  ]
 }

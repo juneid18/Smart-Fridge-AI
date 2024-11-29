@@ -4,14 +4,18 @@
     "slug": "application",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon.jpg",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "extra": {
+      "GEMINI_API_KEY": "AIzaSyBcajbdnspcW_xNqkeu4mjHTzB_FT0YO7Q"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yourcompany.applicationfridge",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -23,17 +27,23 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
-    ],
+  "expo-router",
+  [
+    "expo-image-picker",
+    {
+      "photosPermission": "The app accesses your photos to analyze the image and add it to your item section."
+    }
+  ],
+  [
+    "expo-splash-screen",
+    {
+      "image": "./assets/images/splash-icon.png",
+      "imageWidth": 200,
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    }
+  ]
+],
     "experiments": {
       "typedRoutes": true
     }
